@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #1F1F20"></canvas>
-    <script src="Build/webbuild.loader.js"></script>
+    <script src="Build/jogozumbi.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/webbuild.data",
-        frameworkUrl: "Build/webbuild.framework.js",
-        codeUrl: "Build/webbuild.wasm",
+        dataUrl: "Build/jogozumbi.data",
+        frameworkUrl: "Build/jogozumbi.framework.js",
+        codeUrl: "Build/jogozumbi.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "apocalipse-zumbi-alura",
